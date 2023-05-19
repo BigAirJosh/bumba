@@ -4,6 +4,8 @@ from components.fighter import Fighter
 from components.inventory import Inventory
 from entity import Actor, Item
 
+import color
+
 player = Actor(
     char="@",
     color=(255, 255, 255),
@@ -23,7 +25,7 @@ orc = Actor(
 )
 troll = Actor(
     char="T",
-    color=(0, 153, 219),
+    color=color.troll,
     name="Troll",
     ai_cls=HostileEnemy,
     fighter=Fighter(hp=16, defense=1, power=4),
